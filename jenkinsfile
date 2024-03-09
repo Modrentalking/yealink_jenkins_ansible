@@ -1,0 +1,272 @@
+pipeline {
+    agent any
+    
+    parameters {
+        string(name: "linekey1label", defaultValue: "${params.linekey1label ?: '-'}", description: "linekey.1.label")
+        string(name: "linekey1value", defaultValue: "${params.linekey1value ?: '-'}", description: "linekey.1.value")
+        string(name: "linekey2label", defaultValue: "${params.linekey2label ?: '-'}", description: "linekey.2.label")
+        string(name: "linekey2value", defaultValue: "${params.linekey2value ?: '-'}", description: "linekey.2.value")
+        string(name: "linekey3label", defaultValue: "${params.linekey3label ?: '-'}", description: "linekey.3.label")
+        string(name: "linekey3value", defaultValue: "${params.linekey3value ?: '-'}", description: "linekey.3.value")
+        string(name: "linekey4label", defaultValue: "${params.linekey4label ?: '-'}", description: "linekey.4.label")
+        string(name: "linekey4value", defaultValue: "${params.linekey4value ?: '-'}", description: "linekey.4.value")
+        string(name: "linekey5label", defaultValue: "${params.linekey5label ?: '-'}", description: "linekey.5.label")
+        string(name: "linekey5value", defaultValue: "${params.linekey5value ?: '-'}", description: "linekey.5.value")
+        string(name: "linekey6label", defaultValue: "${params.linekey6label ?: '-'}", description: "linekey.6.label")
+        string(name: "linekey6value", defaultValue: "${params.linekey6value ?: '-'}", description: "linekey.6.value")
+        string(name: "linekey7label", defaultValue: "${params.linekey7label ?: '-'}", description: "linekey.7.label")
+        string(name: "linekey7value", defaultValue: "${params.linekey7value ?: '-'}", description: "linekey.7.value")
+        string(name: "linekey8label", defaultValue: "${params.linekey8label ?: '-'}", description: "linekey.8.label")
+        string(name: "linekey8value", defaultValue: "${params.linekey8value ?: '-'}", description: "linekey.8.value")
+        string(name: "linekey9label", defaultValue: "${params.linekey9label ?: '-'}", description: "linekey.9.label")
+        string(name: "linekey9value", defaultValue: "${params.linekey9value ?: '-'}", description: "linekey.9.value")
+        string(name: "linekey10label", defaultValue: "${params.linekey10label ?: '-'}", description: "linekey.10.label")
+        string(name: "linekey10value", defaultValue: "${params.linekey10value ?: '-'}", description: "linekey.10.value")
+        string(name: "linekey11label", defaultValue: "${params.linekey11label ?: '-'}", description: "linekey.11.label")
+        string(name: "linekey11value", defaultValue: "${params.linekey11value ?: '-'}", description: "linekey.11.value")
+        string(name: "linekey12label", defaultValue: "${params.linekey12label ?: '-'}", description: "linekey.12.label")
+        string(name: "linekey12value", defaultValue: "${params.linekey12value ?: '-'}", description: "linekey.12.value")
+        string(name: "linekey13label", defaultValue: "${params.linekey13label ?: '-'}", description: "linekey.13.label")
+        string(name: "linekey13value", defaultValue: "${params.linekey13value ?: '-'}", description: "linekey.13.value")
+        string(name: "linekey14label", defaultValue: "${params.linekey14label ?: '-'}", description: "linekey.14.label")
+        string(name: "linekey14value", defaultValue: "${params.linekey14value ?: '-'}", description: "linekey.14.value")
+        string(name: "linekey15label", defaultValue: "${params.linekey15label ?: '-'}", description: "linekey.15.label")
+        string(name: "linekey15value", defaultValue: "${params.linekey15value ?: '-'}", description: "linekey.15.value")
+        string(name: "linekey16label", defaultValue: "${params.linekey16label ?: '-'}", description: "linekey.16.label")
+        string(name: "linekey16value", defaultValue: "${params.linekey16value ?: '-'}", description: "linekey.16.value")
+        string(name: "linekey17label", defaultValue: "${params.linekey17label ?: '-'}", description: "linekey.17.label")
+        string(name: "linekey17value", defaultValue: "${params.linekey17value ?: '-'}", description: "linekey.17.value")
+        string(name: "linekey18label", defaultValue: "${params.linekey18label ?: '-'}", description: "linekey.18.label")
+        string(name: "linekey18value", defaultValue: "${params.linekey18value ?: '-'}", description: "linekey.18.value")
+        string(name: "linekey19label", defaultValue: "${params.linekey19label ?: '-'}", description: "linekey.19.label")
+        string(name: "linekey19value", defaultValue: "${params.linekey19value ?: '-'}", description: "linekey.19.value")
+        string(name: "linekey20label", defaultValue: "${params.linekey20label ?: '-'}", description: "linekey.20.label")
+        string(name: "linekey20value", defaultValue: "${params.linekey20value ?: '-'}", description: "linekey.20.value")
+        string(name: "linekey21label", defaultValue: "${params.linekey21label ?: '-'}", description: "linekey.21.label")
+        string(name: "linekey21value", defaultValue: "${params.linekey21value ?: '-'}", description: "linekey.21.value")
+        string(name: "linekey22label", defaultValue: "${params.linekey22label ?: '-'}", description: "linekey.22.label")
+        string(name: "linekey22value", defaultValue: "${params.linekey22value ?: '-'}", description: "linekey.22.value")
+        string(name: "linekey23label", defaultValue: "${params.linekey23label ?: '-'}", description: "linekey.23.label")
+        string(name: "linekey23value", defaultValue: "${params.linekey23value ?: '-'}", description: "linekey.23.value")
+        string(name: "linekey24label", defaultValue: "${params.linekey24label ?: '-'}", description: "linekey.24.label")
+        string(name: "linekey24value", defaultValue: "${params.linekey24value ?: '-'}", description: "linekey.24.value")
+        string(name: "linekey25label", defaultValue: "${params.linekey25label ?: '-'}", description: "linekey.25.label")
+        string(name: "linekey25value", defaultValue: "${params.linekey25value ?: '-'}", description: "linekey.25.value")
+        string(name: "linekey26label", defaultValue: "${params.linekey26label ?: '-'}", description: "linekey.26.label")
+        string(name: "linekey26value", defaultValue: "${params.linekey26value ?: '-'}", description: "linekey.26.value")
+        string(name: "linekey27label", defaultValue: "${params.linekey27label ?: '-'}", description: "linekey.27.label")
+        string(name: "linekey27value", defaultValue: "${params.linekey27value ?: '-'}", description: "linekey.27.value")
+        string(name: "linekey28label", defaultValue: "${params.linekey28label ?: '-'}", description: "linekey.28.label")
+        string(name: "linekey28value", defaultValue: "${params.linekey28value ?: '-'}", description: "linekey.28.value")
+        string(name: "linekey29label", defaultValue: "${params.linekey29label ?: '-'}", description: "linekey.29.label")
+        string(name: "linekey29value", defaultValue: "${params.linekey29value ?: '-'}", description: "linekey.29.value")
+        string(name: "linekey30label", defaultValue: "${params.linekey30label ?: '-'}", description: "linekey.30.label")
+        string(name: "linekey30value", defaultValue: "${params.linekey30value ?: '-'}", description: "linekey.30.value")
+        string(name: "linekey31label", defaultValue: "${params.linekey31label ?: '-'}", description: "linekey.31.label")
+        string(name: "linekey31value", defaultValue: "${params.linekey31value ?: '-'}", description: "linekey.31.value")
+        string(name: "linekey32label", defaultValue: "${params.linekey32label ?: '-'}", description: "linekey.32.label")
+        string(name: "linekey32value", defaultValue: "${params.linekey32value ?: '-'}", description: "linekey.32.value")
+        string(name: "linekey33label", defaultValue: "${params.linekey33label ?: '-'}", description: "linekey.33.label")
+        string(name: "linekey33value", defaultValue: "${params.linekey33value ?: '-'}", description: "linekey.33.value")
+        string(name: "linekey34label", defaultValue: "${params.linekey34label ?: '-'}", description: "linekey.34.label")
+        string(name: "linekey34value", defaultValue: "${params.linekey34value ?: '-'}", description: "linekey.34.value")
+        string(name: "linekey35label", defaultValue: "${params.linekey35label ?: '-'}", description: "linekey.35.label")
+        string(name: "linekey35value", defaultValue: "${params.linekey35value ?: '-'}", description: "linekey.35.value")
+        string(name: "linekey36label", defaultValue: "${params.linekey36label ?: '-'}", description: "linekey.36.label")
+        string(name: "linekey36value", defaultValue: "${params.linekey36value ?: '-'}", description: "linekey.36.value")
+        string(name: "linekey37label", defaultValue: "${params.linekey37label ?: '-'}", description: "linekey.37.label")
+        string(name: "linekey37value", defaultValue: "${params.linekey37value ?: '-'}", description: "linekey.37.value")
+        string(name: "linekey38label", defaultValue: "${params.linekey38label ?: '-'}", description: "linekey.38.label")
+        string(name: "linekey38value", defaultValue: "${params.linekey38value ?: '-'}", description: "linekey.38.value")
+        string(name: "linekey39label", defaultValue: "${params.linekey39label ?: '-'}", description: "linekey.39.label")
+        string(name: "linekey39value", defaultValue: "${params.linekey39value ?: '-'}", description: "linekey.39.value")
+        string(name: "linekey40label", defaultValue: "${params.linekey40label ?: '-'}", description: "linekey.40.label")
+        string(name: "linekey40value", defaultValue: "${params.linekey40value ?: '-'}", description: "linekey.40.value")
+        string(name: "linekey41label", defaultValue: "${params.linekey41label ?: '-'}", description: "linekey.41.label")
+        string(name: "linekey41value", defaultValue: "${params.linekey41value ?: '-'}", description: "linekey.41.value")
+        string(name: "linekey42label", defaultValue: "${params.linekey42label ?: '-'}", description: "linekey.42.label")
+        string(name: "linekey42value", defaultValue: "${params.linekey42value ?: '-'}", description: "linekey.42.value")
+        string(name: "linekey43label", defaultValue: "${params.linekey43label ?: '-'}", description: "linekey.43.label")
+        string(name: "linekey43value", defaultValue: "${params.linekey43value ?: '-'}", description: "linekey.43.value")
+        string(name: "linekey44label", defaultValue: "${params.linekey44label ?: '-'}", description: "linekey.44.label")
+        string(name: "linekey44value", defaultValue: "${params.linekey44value ?: '-'}", description: "linekey.44.value")
+        string(name: "linekey45label", defaultValue: "${params.linekey45label ?: '-'}", description: "linekey.45.label")
+        string(name: "linekey45value", defaultValue: "${params.linekey45value ?: '-'}", description: "linekey.45.value")
+        string(name: "linekey46label", defaultValue: "${params.linekey46label ?: '-'}", description: "linekey.46.label")
+        string(name: "linekey46value", defaultValue: "${params.linekey46value ?: '-'}", description: "linekey.46.value")
+        string(name: "linekey47label", defaultValue: "${params.linekey47label ?: '-'}", description: "linekey.47.label")
+        string(name: "linekey47value", defaultValue: "${params.linekey47value ?: '-'}", description: "linekey.47.value")
+        string(name: "linekey48label", defaultValue: "${params.linekey48label ?: '-'}", description: "linekey.48.label")
+        string(name: "linekey48value", defaultValue: "${params.linekey48value ?: '-'}", description: "linekey.48.value")
+        string(name: "linekey49label", defaultValue: "${params.linekey49label ?: '-'}", description: "linekey.49.label")
+        string(name: "linekey49value", defaultValue: "${params.linekey49value ?: '-'}", description: "linekey.49.value")
+        string(name: "linekey50label", defaultValue: "${params.linekey50label ?: '-'}", description: "linekey.50.label")
+        string(name: "linekey50value", defaultValue: "${params.linekey50value ?: '-'}", description: "linekey.50.value")
+        string(name: "linekey51label", defaultValue: "${params.linekey51label ?: '-'}", description: "linekey.51.label")
+        string(name: "linekey51value", defaultValue: "${params.linekey51value ?: '-'}", description: "linekey.51.value")
+        string(name: "linekey52label", defaultValue: "${params.linekey52label ?: '-'}", description: "linekey.52.label")
+        string(name: "linekey52value", defaultValue: "${params.linekey52value ?: '-'}", description: "linekey.52.value")
+        string(name: "linekey53label", defaultValue: "${params.linekey53label ?: '-'}", description: "linekey.53.label")
+        string(name: "linekey53value", defaultValue: "${params.linekey53value ?: '-'}", description: "linekey.53.value")
+        string(name: "linekey54label", defaultValue: "${params.linekey54label ?: '-'}", description: "linekey.54.label")
+        string(name: "linekey54value", defaultValue: "${params.linekey54value ?: '-'}", description: "linekey.54.value")
+        string(name: "linekey55label", defaultValue: "${params.linekey55label ?: '-'}", description: "linekey.55.label")
+        string(name: "linekey55value", defaultValue: "${params.linekey55value ?: '-'}", description: "linekey.55.value")
+        string(name: "linekey56label", defaultValue: "${params.linekey56label ?: '-'}", description: "linekey.56.label")
+        string(name: "linekey56value", defaultValue: "${params.linekey56value ?: '-'}", description: "linekey.56.value")
+        string(name: "linekey57label", defaultValue: "${params.linekey57label ?: '-'}", description: "linekey.57.label")
+        string(name: "linekey57value", defaultValue: "${params.linekey57value ?: '-'}", description: "linekey.57.value")
+        string(name: "linekey58label", defaultValue: "${params.linekey58label ?: '-'}", description: "linekey.58.label")
+        string(name: "linekey58value", defaultValue: "${params.linekey58value ?: '-'}", description: "linekey.58.value")
+        string(name: "linekey59label", defaultValue: "${params.linekey59label ?: '-'}", description: "linekey.59.label")
+        string(name: "linekey59value", defaultValue: "${params.linekey59value ?: '-'}", description: "linekey.59.value")
+        string(name: "linekey60label", defaultValue: "${params.linekey60label ?: '-'}", description: "linekey.60.label")
+        string(name: "linekey60value", defaultValue: "${params.linekey60value ?: '-'}", description: "linekey.60.value")
+
+    }
+
+    stages {
+        stage('PWD') {
+            steps {
+                script {
+                    sh 'pwd'
+                }
+            }
+        }
+        stage('Run Ansible') {
+            steps {
+                script {
+                    def paramsJson = [:] // Создаем пустой объект JSON
+                    //paramsJson.test = params.test // Добавляем параметр test в JSON
+                   // paramsJson.email = params.email // Добавляем параметр email в JSON
+                    paramsJson.linekey1label = params.linekey1label
+                    paramsJson.linekey1value = paramsJson.linekey1value
+                    paramsJson.linekey2label = params.linekey2label
+                    paramsJson.linekey2value = paramsJson.linekey2value
+                    paramsJson.linekey3label = params.linekey3label
+                    paramsJson.linekey3value = paramsJson.linekey3value
+                    paramsJson.linekey4label = params.linekey4label
+                    paramsJson.linekey4value = paramsJson.linekey4value
+                    paramsJson.linekey5label = params.linekey5label
+                    paramsJson.linekey5value = paramsJson.linekey5value
+                    paramsJson.linekey6label = params.linekey6label
+                    paramsJson.linekey6value = paramsJson.linekey6value
+                    paramsJson.linekey7label = params.linekey7label
+                    paramsJson.linekey7value = paramsJson.linekey7value
+                    paramsJson.linekey8label = params.linekey8label
+                    paramsJson.linekey8value = paramsJson.linekey8value
+                    paramsJson.linekey9label = params.linekey9label
+                    paramsJson.linekey9value = paramsJson.linekey9value
+                    paramsJson.linekey10label = params.linekey10label
+                    paramsJson.linekey10value = paramsJson.linekey10value
+                    paramsJson.linekey11label = params.linekey11label
+                    paramsJson.linekey11value = paramsJson.linekey11value
+                    paramsJson.linekey12label = params.linekey12label
+                    paramsJson.linekey12value = paramsJson.linekey12value
+                    paramsJson.linekey13label = params.linekey13label
+                    paramsJson.linekey13value = paramsJson.linekey13value
+                    paramsJson.linekey14label = params.linekey14label
+                    paramsJson.linekey14value = paramsJson.linekey14value
+                    paramsJson.linekey15label = params.linekey15label
+                    paramsJson.linekey15value = paramsJson.linekey15value
+                    paramsJson.linekey16label = params.linekey16label
+                    paramsJson.linekey16value = paramsJson.linekey16value
+                    paramsJson.linekey17label = params.linekey17label
+                    paramsJson.linekey17value = paramsJson.linekey17value
+                    paramsJson.linekey18label = params.linekey18label
+                    paramsJson.linekey18value = paramsJson.linekey18value
+                    paramsJson.linekey19label = params.linekey19label
+                    paramsJson.linekey19value = paramsJson.linekey19value
+                    paramsJson.linekey20label = params.linekey20label
+                    paramsJson.linekey20value = paramsJson.linekey20value
+                    paramsJson.linekey21label = params.linekey21label
+                    paramsJson.linekey21value = paramsJson.linekey21value
+                    paramsJson.linekey22label = params.linekey22label
+                    paramsJson.linekey22value = paramsJson.linekey22value
+                    paramsJson.linekey23label = params.linekey23label
+                    paramsJson.linekey23value = paramsJson.linekey23value
+                    paramsJson.linekey24label = params.linekey24label
+                    paramsJson.linekey24value = paramsJson.linekey24value
+                    paramsJson.linekey25label = params.linekey25label
+                    paramsJson.linekey25value = paramsJson.linekey25value
+                    paramsJson.linekey26label = params.linekey26label
+                    paramsJson.linekey26value = paramsJson.linekey26value
+                    paramsJson.linekey27label = params.linekey27label
+                    paramsJson.linekey27value = paramsJson.linekey27value
+                    paramsJson.linekey28label = params.linekey28label
+                    paramsJson.linekey28value = paramsJson.linekey28value
+                    paramsJson.linekey29label = params.linekey29label
+                    paramsJson.linekey29value = paramsJson.linekey29value
+                    paramsJson.linekey30label = params.linekey30label
+                    paramsJson.linekey30value = paramsJson.linekey30value
+                    paramsJson.linekey31label = params.linekey31label
+                    paramsJson.linekey31value = paramsJson.linekey31value
+                    paramsJson.linekey32label = params.linekey32label
+                    paramsJson.linekey32value = paramsJson.linekey32value
+                    paramsJson.linekey33label = params.linekey33label
+                    paramsJson.linekey33value = paramsJson.linekey33value
+                    paramsJson.linekey34label = params.linekey34label
+                    paramsJson.linekey34value = paramsJson.linekey34value
+                    paramsJson.linekey35label = params.linekey35label
+                    paramsJson.linekey35value = paramsJson.linekey35value
+                    paramsJson.linekey36label = params.linekey36label
+                    paramsJson.linekey36value = paramsJson.linekey36value
+                    paramsJson.linekey37label = params.linekey37label
+                    paramsJson.linekey37value = paramsJson.linekey37value
+                    paramsJson.linekey38label = params.linekey38label
+                    paramsJson.linekey38value = paramsJson.linekey38value
+                    paramsJson.linekey39label = params.linekey39label
+                    paramsJson.linekey39value = paramsJson.linekey39value
+                    paramsJson.linekey40label = params.linekey40label
+                    paramsJson.linekey40value = paramsJson.linekey40value
+                    paramsJson.linekey41label = params.linekey41label
+                    paramsJson.linekey41value = paramsJson.linekey41value
+                    paramsJson.linekey42label = params.linekey42label
+                    paramsJson.linekey42value = paramsJson.linekey42value
+                    paramsJson.linekey43label = params.linekey43label
+                    paramsJson.linekey43value = paramsJson.linekey43value
+                    paramsJson.linekey44label = params.linekey44label
+                    paramsJson.linekey44value = paramsJson.linekey44value
+                    paramsJson.linekey45label = params.linekey45label
+                    paramsJson.linekey45value = paramsJson.linekey45value
+                    paramsJson.linekey46label = params.linekey46label
+                    paramsJson.linekey46value = paramsJson.linekey46value
+                    paramsJson.linekey47label = params.linekey47label
+                    paramsJson.linekey47value = paramsJson.linekey47value
+                    paramsJson.linekey48label = params.linekey48label
+                    paramsJson.linekey48value = paramsJson.linekey48value
+                    paramsJson.linekey49label = params.linekey49label
+                    paramsJson.linekey49value = paramsJson.linekey49value
+                    paramsJson.linekey50label = params.linekey50label
+                    paramsJson.linekey50value = paramsJson.linekey50value
+                    paramsJson.linekey51label = params.linekey51label
+                    paramsJson.linekey51value = paramsJson.linekey51value
+                    paramsJson.linekey52label = params.linekey52label
+                    paramsJson.linekey52value = paramsJson.linekey52value
+                    paramsJson.linekey53label = params.linekey53label
+                    paramsJson.linekey53value = paramsJson.linekey53value
+                    paramsJson.linekey54label = params.linekey54label
+                    paramsJson.linekey54value = paramsJson.linekey54value
+                    paramsJson.linekey55label = params.linekey55label
+                    paramsJson.linekey55value = paramsJson.linekey55value
+                    paramsJson.linekey56label = params.linekey56label
+                    paramsJson.linekey56value = paramsJson.linekey56value
+                    paramsJson.linekey57label = params.linekey57label
+                    paramsJson.linekey57value = paramsJson.linekey57value
+                    paramsJson.linekey58label = params.linekey58label
+                    paramsJson.linekey58value = paramsJson.linekey58value
+                    paramsJson.linekey59label = params.linekey59label
+                    paramsJson.linekey59value = paramsJson.linekey59value
+                    paramsJson.linekey60label = params.linekey60label
+                    paramsJson.linekey60value = paramsJson.linekey60value
+
+                    
+                    writeFile file: 'params.json', text: groovy.json.JsonOutput.toJson(paramsJson) // Записываем JSON в файл
+                    
+                    //sh "ansible-playbook -e email='${params.email}' -e test='${params.test}' playbook.yml"
+                    //sh "ansible-playbook  playbook.yml -e @params.json "
+                }
+            }
+        }
+    }
+}
